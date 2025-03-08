@@ -15,6 +15,8 @@ import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { provideAuth} from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import { CategorieComponent } from './categorie/categorie.component';
+import { UtilisateurComponent } from './utilisateur/utilisateur.component';
 
 @NgModule({
   imports: [
@@ -35,6 +37,8 @@ provideFirestore(() => getFirestore()) // Init Firestore     //acceder a collect
   declarations: [
     AppComponent,
     AdminLayoutComponent,
+    CategorieComponent,
+    UtilisateurComponent,
 
   ],
   providers: [],
