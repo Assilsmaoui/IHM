@@ -1,0 +1,46 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header card-header-danger">
+            <h4 class="card-title">Ajouter une Catégorie</h4>
+            <p class="card-category">Remplissez les informations de la catégorie</p>
+          </div>
+          <div class="card-body">
+            <form (ngSubmit)="ajouterCategorie()">
+              <div class="row">
+                <div class="col-md-12">
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Nom de la catégorie</mat-label>
+                    <input matInput [formControl]="nomCatControl" [(ngModel)]="categorie.nomcat" name="nomcat" required>
+                  </mat-form-field>
+                </div>
+              </div>
+
+              <button mat-raised-button type="submit" class="btn btn-danger pull-right" [disabled]="!nomCatControl.valid">
+                Ajouter
+              </button>
+              <a mat-raised-button class="btn btn-secondary pull-right mr-2" routerLink="/categories">Annuler</a>
+              <div class="clearfix"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card card-profile">
+          <div class="card-avatar">
+            <a href="javascript:void(0)">
+              <img class="img" src="./assets/img/category-default.png" />
+            </a>
+          </div>
+          <div class="card-body">
+            <h6 class="card-category text-gray">Nouvelle Catégorie</h6>
+            <h4 class="card-title">{{ categorie.nomcat || "Nom de la catégorie" }}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

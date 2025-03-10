@@ -1,24 +1,76 @@
 {
-    "utilisateurs": [
-      { "id": 1, "email": "admin@example.com", "mdp": "admin123", "role": "admin" },
-      { "id": 2, "email": "client@example.com", "mdp": "client123", "role": "client" },
-      { "id": 3, "email": "prestataire@example.com", "mdp": "prestataire123", "role": "prestataire" }
-    ],
-    "roles": [
-      { "id": 1, "role": "admin" },
-      { "id": 2, "role": "client" },
-      { "id": 3, "role": "prestataire" }
-    ],
-    "categories": [
-      { "id": 1, "nomcat": "Informatique" }
-    ],
-    "souscategories": [
-      { "id": 1, "nomscat": "Développement Web", "categorieId": 1 }
-    ],
-    "publications": [
-      { "id": 1, "titre": "Site e-commerce", "description": "Création d'un site e-commerce", "prix": 1500.0, "date_pub": "2024-03-08", "sousCategorieId": 1 }
-    ],
-    "avis": [
-      { "id": 1, "clientId": 2, "publicationId": 1, "commentaire": "Très bon service", "note": 5 }
-    ]
-  }
+  "utilisateurs": [
+    {
+      "id": "1",
+      "email": "admin@example.com",
+      "mdp": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "email": "client@example.com",
+      "mdp": "client123",
+      "role": "client"
+    },
+    {
+      "id": "3",
+      "email": "prestataire@example.com",
+      "mdp": "prestataire123",
+      "role": "prestataire"
+    }
+  ],
+  "roles": [
+    {
+      "id": "1",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "role": "client"
+    },
+    {
+      "id": "3",
+      "role": "prestataire"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "nomcat": "Informatique"
+    },
+    {
+      "id": "148c",
+      "nomcat": "aaaaa"
+    },
+    {
+      "id": "db79",
+      "nomcat": "ffffff"
+    }
+  ],
+  "souscategories": [
+    {
+      "id": "1",
+      "nomscat": "Développement Web",
+      "categorieId": 1
+    }
+  ],
+  "publications": [
+    {
+      "id": "1",
+      "titre": "Site e-commerce",
+      "description": "Création d'un site e-commerce",
+      "prix": 1500,
+      "date_pub": "2024-03-08",
+      "sousCategorieId": 1
+    }
+  ],
+  "avis": [
+    {
+      "id": "1",
+      "clientId": 2,
+      "publicationId": 1,
+      "commentaire": "Très bon service",
+      "note": 5
+    }
+  ]
+}

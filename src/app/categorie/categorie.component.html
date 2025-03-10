@@ -1,1 +1,24 @@
-<p>categorie works!</p>
+<div class="container">
+  <h2>Liste des Catégories</h2>
+
+  <!-- Bouton d'ajout avec routerLink -->
+  <a class="btn btn-primary mb-3" routerLink="/Ajoutcategorie">Ajouter une catégorie</a>
+
+  <div *ngIf="loading">Chargement des catégories...</div>
+  <div *ngIf="errorMessage">{{ errorMessage }}</div>
+
+  <table *ngIf="!loading && !errorMessage" class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nom</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let categorie of categories">
+        <td>{{ categorie.id }}</td>
+        <td>{{ categorie.nomcat }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

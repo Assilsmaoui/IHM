@@ -5,6 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { UtilisateurComponent } from './utilisateur/utilisateur.component';
+import { CategorieComponent } from './categorie/categorie.component';
+import { ajoutcategorieComponent } from './ajoutcategorie/ajoutcategorie.component';
 
 const routes: Routes =[
   {
@@ -22,6 +24,11 @@ const routes: Routes =[
     path:'user',
     pathMatch:'full',
     component:UtilisateurComponent
+  },
+    {
+     path:'Ajoutcategorie',
+     pathMatch:'full',
+     component:ajoutcategorieComponent
   },
 ];
 
